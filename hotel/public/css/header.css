@@ -1,0 +1,186 @@
+*{
+	padding: 0;margin:0;
+}
+body{
+	width: 100%;
+    height: 600px;
+	position: relative;
+}
+header{
+    width: 25%;
+    position: absolute;
+}
+header aside{
+	width: 100%;
+	height: inherit;
+	position: relative;
+}
+.logo{
+	display: block;
+	line-height: 20px;
+	margin:99px;
+	position: absolute;
+
+}
+.logo .titel{
+	display: inline-flex;
+	width: 100%;
+
+}
+.logo .titel h1{
+	font-family: sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+.logo .titel .cercle{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: orange;
+}
+.logo h3{
+	font-family: sans-serif;
+	letter-spacing:6px;
+	font-size: 15px;
+}
+nav{
+	position: absolute;
+	top:238px;
+}
+nav ul {
+	margin: 0 90px;
+}
+nav ul li {
+	display: block;
+	list-style: none;
+	padding: 10px 0px;
+	width:200px;
+	position: relative;
+
+}
+nav ul li a {
+	text-decoration: none;
+	color:#000;
+	font-family: sans-serif;
+	font-size:15px;
+}
+nav ul li a:hover{
+	color: orange;
+}
+nav ul li a::before{
+	content:'';
+	width: 0px;
+	height: 4px;
+	background-color:orange;
+	display:inline-flex;
+	
+}
+nav ul li a:hover:before{
+	transform: translateX(-90px);
+	width: 50px;
+	position: absolute;
+	left:0;
+	top: 10px;
+	margin-top: 5px;
+}
+nav ul li .active::before{
+	transform: translateX(-90px);
+	width: 50px;
+	position: absolute;
+	left:0;
+	top: 10px;
+	margin-top: 5px;
+}
+nav ul li > ul{
+    display: none;
+    margin: 0px;
+}
+nav ul li > ul li{
+      padding: 0px;
+}
+nav ul li > ul a:hover:before{
+    content:'';
+	width: 0px;
+	height: 0px;
+}
+.botton{
+	position: absolute;
+	top: 470px;
+	margin: 0 60px;
+	
+}
+.botton button{
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	margin-bottom: 10px;
+	color:white;
+	font-size: 18px;
+	border: none;
+	
+}
+.botton button:first-child{
+	background-color: orange;
+	transition: all 1s ease;
+}
+.botton button:last-child{
+	background-color: #ffc107;
+}
+.botton button:first-child:hover{
+	background-color: black;
+    color: white;
+	
+}
+span i{
+    margin-left: 5px;
+    font-size: 50px;
+}
+.service{
+	position: absolute;
+	top: 850px;
+	margin: 30px 90px;
+}
+.service ul{
+    width: 200px;
+}
+.service ul li {
+	list-style: none;
+	padding: 10px 0px;
+}
+.service ul li i{
+	font-size: 20px;
+	color: #A0A0A0;
+	
+}
+
+.service ul li a{
+	text-decoration: none;
+	color:black;
+	font-family:sans-serif;
+	padding: 9px;
+}
+.service ul li a:hover{
+	color: orange;
+}
+.media{
+	position: absolute;
+	top: 950px;
+	margin: 50px 0 50px 90px;
+	
+}
+.media ul li {
+	display: inline;
+	list-style: none;
+
+}
+.media ul li i{
+	font-size: 20px;
+	padding-right: 30px;
+}
+.media ul li:last-child i{
+	padding-right: 0px;
+}
+.media ul li a {
+	color: #A0A0A0;
+}
+.media ul li a:hover{color: orange;}
